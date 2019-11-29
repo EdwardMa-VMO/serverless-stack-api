@@ -25,6 +25,8 @@ export async function main(event, context) {
     console.log(params);
     return success(params.Item);
   } catch (e) {
+    console.log('catch e \n');
+    console.log(e);
     return failure({ status: false });
   }
 }
