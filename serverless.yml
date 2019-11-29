@@ -22,7 +22,7 @@ provider:
   runtime: nodejs10.x
   # stage: prod
   stage: dev
-  region: us-east-1
+  region: us-east-2
 
   # These environment variables are made available to our functions
   # under process.env.
