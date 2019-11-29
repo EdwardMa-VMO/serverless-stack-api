@@ -13,8 +13,11 @@ export async function main(event, context) {
       attachment: data.attachment,
       createdAt: Date.now()
     }
-  };
 
+
+  };
+  console.log(data);
+  console.log(params);
   try {
     await dynamoDbLib.call("put", params);
     return success(params.Item);
